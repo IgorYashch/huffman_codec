@@ -4,9 +4,11 @@ import json
 
 __all__ = ['encode', 'decode', 'encode_to_files', 'decode_from_files']
 
+# -------------------------------------------#
+#   The start of Haffman coding realisation  #
+# -------------------------------------------#
 
 Node = namedtuple('Node', ['count', 'letter', 'left', 'right'])
-CompressNode = namedtuple('CompressNode', ['letter', 'left', 'right'])
 
 def make_tree(heap):
     """Make a Huffman tree.
@@ -103,6 +105,12 @@ def decode(code, tree):
 
     return ''.join(result)
 
+# -------------------------------------------#
+#    The end of Haffman coding realisation   #
+# -------------------------------------------#
+
+
+CompressNode = namedtuple('CompressNode', ['letter', 'left', 'right'])
 
 def tree_for_compression(tree):
     '''Remove count field from tree
