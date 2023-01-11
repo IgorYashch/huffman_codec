@@ -5,7 +5,7 @@ import json
 __all__ = ['encode', 'decode', 'encode_to_files', 'decode_from_files']
 
 # -------------------------------------------#
-#   The start of Haffman coding realisation  #
+#   The start of Haffman coding realization  #
 # -------------------------------------------#
 
 Node = namedtuple('Node', ['count', 'letter', 'left', 'right'])
@@ -106,7 +106,7 @@ def decode(code, tree):
     return ''.join(result)
 
 # -------------------------------------------#
-#    The end of Haffman coding realisation   #
+#    The end of Haffman coding realization   #
 # -------------------------------------------#
 
 
