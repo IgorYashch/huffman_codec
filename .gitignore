@@ -1,0 +1,4 @@
+**/__pycache__/
+*.huff
+*.tree
+**/.ipynb_checkpoints/
