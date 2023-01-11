@@ -2,7 +2,7 @@ from heapq import heapify, heappop, heappush
 from collections import Counter, namedtuple
 import json
 
-__all__ = ['encode', 'decode', 'encode_to_files', 'encode_to_files']
+__all__ = ['encode', 'decode', 'encode_to_files', 'decode_from_files']
 
 
 Node = namedtuple('Node', ['count', 'letter', 'left', 'right'])
