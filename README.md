@@ -6,4 +6,8 @@
 - ```encode_to_files(text, code_file, tree_file)```
 - ```decode_from_files(code_file, tree_file)```
 
-#### Пример использования в example.ipynb
+#### Пример использования в [example.ipynb](./example.ipynb)
+
+####TODO: 
+- хранение дерева в файле неоптимально
+- склеить код и дерево в один файл
