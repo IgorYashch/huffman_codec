@@ -14,7 +14,6 @@ def make_tree(heap):
     heap: list of Nodes with the heap property
     """
 
-    print(heap)
     while len(heap) > 1:
         left = heappop(heap)
         right = heappop(heap)
@@ -70,7 +69,6 @@ def encode(text):
 
     # Count chars in text, create nodes with these chars and heapify them with their counts
     c = Counter(text)
-    print(c)
     nodes = [Node(count, letter, None, None) for letter, count in c.items()]
     heap = nodes.copy()
     heapify(heap)
